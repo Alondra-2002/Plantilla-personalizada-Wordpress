@@ -1,0 +1,346 @@
+/*
+Theme Name: WP render2web
+Theme URI: https://render2web.com
+Author: render2web 
+Author URI: https://render2web.com
+Description: Plantilla para wordpress
+Version: 1.1 
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+Tags: black, brown, orage, tan, white, yellow, light, one-column, 
+two-columns, right-sidebar, flexible-width, custom-header, custom-menu, 
+editor-style, featured-images, microformats, post-formats, 
+rtl-language-support, sticky-post, translation-ready 
+Text Domian: render2web 
+
+This theme, like Wordpress, is licensed under the GPL. 
+Use it to make something cool, have fun, and share what you've learned with 
+others.
+*/
+/*
+ * Estilos Globales
+ */
+
+ body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    font-size: 18px;
+    background-color: #f8f8f8;
+  }
+  
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  
+  .pagina-main{
+    background-color: #fff;
+    padding: 5px;
+  }
+  
+  
+  /*
+   * Sobrescribir valores de bootstrap
+   */
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  
+  /*
+   * Navegación
+   */
+  
+  .blog-masthead {
+    background-color: #EB6864;
+    -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  }
+  
+  /* Nav links */
+  .blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    color: #cdddeb;
+  }
+  .blog-nav-item:hover,
+  .blog-nav-item:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Active state gets a caret at the bottom */
+  .blog-nav .active {
+    color: #fff;
+  }
+  .blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+  }
+  
+  
+  /*
+   * Nombre y descripción del blog
+   */
+  
+  .blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+  }
+  .blog-description {
+    font-size: 20px;
+    color: #999;
+  }
+  
+  
+  /*
+   * Columna principal y lateral
+   */
+  
+  .blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Módulo lateral (sidebar) */
+  .modulo-sidebar {
+    padding: 15px;
+    margin: 0 -15px 15px;
+  }
+  .modulo-sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  .modulo-sidebar-inset p:last-child,
+  .modulo-sidebar-inset ul:last-child,
+  .modulo-sidebar-inset ol:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* Paginación */
+  .pager {
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  .pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  .modulo-sidebar ul{
+    list-style-type: none;
+  }
+  
+  
+  .modulo-sidebar h4{
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    background-color: #aaa !important;;
+    
+  }
+  
+  input[type=submit] {
+      float: right;
+  
+  }
+  
+  
+  /*
+   * Entradas del Blog
+   */
+  
+  .blog-post {
+    margin-bottom: 60px;
+  }
+  .blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+  .blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+  }
+  
+  
+  /*
+   * Pie de página (Footer)
+   */
+  
+  .blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #222;
+    border-top: 1px solid #e5e5e5;
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /*
+   * Estilos personalizados
+   *
+   */
+  
+   .showcase{
+     height:600px;
+     padding: 300px 20px;   
+     text-align: center;
+     background-image: url('../img/woman-3303696_1920.jpg');
+     background-color: center;
+     background-position: 0% 50%;
+     border-bottom:#ccc 1px solid;  
+     color:#fff;
+   }
+  
+   .showcase h1{
+     font-size: 55px;
+     padding-bottom:20px;
+     color:#fff;
+   }
+  
+   .showcase p {
+     font-size:20px;
+     margin-bottom:50px;
+   }
+  
+  .btn-primary{
+    background-color: #aaa !important;
+    background-color: #aaa !important;
+   }
+  
+   .cajas{
+     text-align: center;
+     background: #c6d4e2;
+     margin-bottom: 30px;
+   }
+  
+   .caja .fa{
+     font-size:45px !important;
+     margin-bottom:10px;
+   }
+  
+   .caja{
+     padding:1px;
+     border:#ccc 1px solid;
+   }
+
+   .caja img{
+    width: 250px;
+    height: 250px;
+  }
+  
+   .blog-nav a{
+     color:#fff;
+   }
+  
+   .blog-nav a:hover{
+     color:#666;
+   }
+  
+   .post-thumb img{
+     width:100%;
+     height:auto;
+     margin-bottom:8px;
+   }
+  
+  .comments{
+    border:1px #ccc solid;
+    padding:10px;
+    margin-bottom:20px;
+    margin-top:10px;
+  }
+  
+  .comments h3,.comments h2{
+    background:#428bca;
+    color:#fff;
+    padding:5px;
+  }
+  
+  .comment-body{
+    border:#ccc solid 1px;
+    margin-bottom:10px;
+    padding:20px 10px;
+  }
+  
+  .comment-meta{
+    background:#428bca;
+    color:#fff;
+    padding:10px;
+    overflow:auto;
+  }
+  
+  .comment-meta a{
+    color:#fff;
+  }
+  
+  .comment-meta img{
+    float:left;
+    margin-right:10px;
+  }
+  
+  .comment-reply-link{
+    background:#428bca;
+    color:#fff;
+    display: inline-block;
+    padding: 10px 15px;
+  }
+  
+  .comment-form input, .comment-form textarea{
+    width:100%;
+    padding:4px;
+    border:#ccc solid 1px;
+    margin-bottom:15px;
+  }
+  
+  .post-gallery{
+    background:#333;
+    color:#fff;
+    padding:10px;
+    text-align: center;
+  }
+  .post-gallery img{
+    width: 150px;
+    height:  100px;
+  }
+  
+  .post-gallery h2{
+    color:#fff;
+  }
+  
+  ul, ol{
+    text-decoration: none;
+  }
